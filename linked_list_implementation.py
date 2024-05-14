@@ -103,7 +103,7 @@ class linked_list:
 
     def printNodeData(self):
         curr_node =  self.head
-        while(curr_node.next):
+        while(curr_node):
             print(curr_node.data)
             curr_node =  curr_node.next
 
@@ -112,11 +112,11 @@ class linked_list:
         if self.head is None:
             return 0
         else:
-            sum = 0
+            size = 0
             while(curr_node):
-                sum = sum+1
+                size = size+1
                 curr_node = curr_node.next
-            return sum
+            return size
 
 
 
